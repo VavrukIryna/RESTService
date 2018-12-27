@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 public class MainRestController {
 
-    @Autowired
+  @Autowired
     private EmployeeDAO employeeDAO;
 
     @RequestMapping("/")
@@ -28,7 +28,7 @@ public class MainRestController {
             method = RequestMethod.GET)//, //
          //   produces = { MediaType.APPLICATION_JSON_VALUE, //
          //           MediaType.APPLICATION_XML_VALUE })
-    @ResponseBody
+   // @ResponseBody
     public List<Employee> getEmployees() {
         List<Employee> list = employeeDAO.getAllEmployees();
         return list;
